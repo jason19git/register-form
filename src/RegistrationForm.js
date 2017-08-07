@@ -6,15 +6,9 @@ export default class RegistrationForm extends Component {
     return (
       <form>
         <Row>
-          <Col sm={6} smPush={6}>
-            <FormGroup controlId="sharedUsernameMessage">
-              <ControlLabel></ControlLabel>
-              <p className="form-control-static">Username must be <font color="blue">6-100</font> lower-case characters a-z and 0-9.</p>
-            </FormGroup>
-          </Col>
-          <Col sm={6} smPull={6}>
+          <Col sm={6}>
             <FormGroup controlId="username">
-              <ControlLabel>Shared Username</ControlLabel>
+              <ControlLabel>Shared Username <span style={{fontWeight:"normal"}}>(Username must be <font color="blue">6-100</font> lower-case characters a-z and 0-9.)</span></ControlLabel>
               <FormControl type="text" placeholder="Shared Username" />
             </FormGroup>
           </Col>
@@ -153,7 +147,7 @@ export default class RegistrationForm extends Component {
         <Row>
           <Col sm={6}>
             <FormGroup controlId="phone">
-              <ControlLabel>Phone (e.g. 212-555-1212)</ControlLabel>
+              <ControlLabel>Phone <span style={{fontWeight:"normal"}}>(e.g. 212-555-1212)</span></ControlLabel>
               <FormControl type="text" placeholder="Phone" />
             </FormGroup>
           </Col>
@@ -168,7 +162,7 @@ export default class RegistrationForm extends Component {
         </Row>
 
         <hr />
-        
+
         <Row>
           <Col xs={12} style={{textAlign: "center"}}>
             <Button bsStyle="success">
