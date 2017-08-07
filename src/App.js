@@ -3,7 +3,15 @@ import RegistrationForm from './RegistrationForm';
 
 class App extends Component {
   render() {
-    return <RegistrationForm />;
+    return (
+      <div className="container">
+        <h2>Registration</h2>
+        <hr />
+        <RegistrationForm />
+        <hr />
+        <br />
+      </div>
+    );
   }
 }
 
